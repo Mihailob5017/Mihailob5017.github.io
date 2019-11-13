@@ -1,0 +1,44 @@
+//NAVBAR
+nav {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(#111111, 0.5);
+  align-items: center;
+  border-bottom: 1px solid rosybrown;
+  .logo {
+    min-width: 150px;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    width: 8%;
+  }
+  .hamburger {
+    position: absolute;
+    display: none;
+  }
+  .nav-list {
+    margin-top: 1em;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 2;
+    width: 100%;
+    height: fit-content;
+    .nav-item {
+      margin: 0.5em;
+      list-style: none;
+      .nav-link {
+        text-decoration: none;
+        color: #ffffff;
+        transition: 500ms;
+        font-size: 1.8rem;
+        &:hover {
+          color: rosybrown;
+          border-bottom: 1px solid rosybrown;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}

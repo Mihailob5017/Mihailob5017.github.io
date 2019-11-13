@@ -1,0 +1,86 @@
+body {
+  background: #444444;
+  overflow-y: none;
+}
+ //HEADER WITH THE CHAROUSEL WHEEL
+ header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 350px;
+  width: 100%;
+  border: 1px solid rosybrown;
+  background: #111111;
+  .header-arrow {
+    align-self: flex-end;
+    flex-basis: 10%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .header-main {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image-container {
+      margin: 1em 0em;
+      width: 200px;
+      height: 200px;
+      transition: 1000ms;
+      #image-placeholder {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    .header-more-info {
+      margin: 1em 0em;
+      * {
+        display: block;
+        text-align: center;
+        margin: 0.2em;
+      }
+    }
+  }
+}
+//BODY
+.head-name {
+  font-size: 1.5rem;
+  padding: 0.2em 0;
+  text-align: center;
+  margin: 1em 0;
+  background: rosybrown;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.head-quote {
+  text-align: right;
+  padding-right: 1em;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  * {
+    margin: 0.4em;
+  }
+}
+.head-body {
+  .article-image-container {
+    margin: 1em 0;
+    padding: 0.2em;
+  }
+  .head-body-text {
+    text-align: left;
+    margin: 0.2em 1em;
+  }
+}
+// FOOTER
+footer {
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  padding-bottom: 1em;
+  color: white;
+  background: rosybrown;
+  text-shadow: 1px 1px 1px black;
+}

@@ -1,0 +1,111 @@
+body {
+  background: #444444;
+  overflow-y: none;
+}
+
+//HEADER WITH THE CHAROUSEL WHEEL
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+  border: 1px solid rosybrown;
+  background: #111111;
+  .header-arrow {
+    align-self: flex-end;
+    flex-basis: 5%;
+    border: 1px solid rosybrown;
+    margin-top: 0.5em;
+    text-align: center;
+    padding: 0 0.2em;
+    font-size: 5rem;
+    font-weight: 900;
+    transition: 500ms;
+    &:hover {
+      cursor: pointer;
+      color: #ffffff;
+      text-shadow: 1px 1px 1px #111111;
+      background-color: rosybrown;
+    }
+  }
+  .header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image-container {
+      width: 700px;
+      margin: 1em 0em;
+      transition: 1000ms;
+      #image-placeholder {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .header-more-info {
+      font-size: 1.5rem;
+      margin: 1em 0em;
+      * {
+        display: block;
+        text-align: center;
+        margin: 0.2em;
+      }
+    }
+  }
+}
+//BODY
+.head-name {
+  font-size: 4rem;
+  font-weight: 1000;
+  padding-left: 1em;
+  letter-spacing: 1px;
+  text-align: left;
+  margin: 1em 0;
+  color: rosybrown;
+  text-shadow: 1px 1px 1px black;
+}
+.head-quote {
+  text-align: right;
+  padding-right: 1em;
+  display: flex;
+  font-size: 1.8rem;
+  flex-direction: column;
+  background-color: rosybrown;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  * {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0.4em;
+  }
+}
+.head-body {
+    display: flex;
+    flex-direction: row;
+    
+  .article-image-container {
+    margin: 1em 0;
+    padding: 0.2em;
+  }
+  .head-body-text {
+    text-align: left;
+    margin: 1em;
+    font-size: 1.5rem;
+  }
+}
+// FOOTER
+footer {
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  font-size: 2rem;
+  padding-bottom: 1.5em;
+  color: white;
+  background: rosybrown;
+  text-shadow: 1px 1px 1px black;
+}
+#nav-active {
+  color: rosybrown;
+  padding: 0 5px;
+  border-bottom: 1px solid rosybrown;
+}

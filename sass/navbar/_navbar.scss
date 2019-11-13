@@ -1,0 +1,60 @@
+//NAVBAR
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(#111111, 0.5);
+    align-items: center;
+    z-index: 2;
+    border-bottom: 1px solid rosybrown;
+    .logo {
+      min-width: 150px;
+      margin-left: 0.5em;
+      padding: 0.5em;
+      width: 150px;
+      width: 8%;
+    }
+    .hamburger {
+      border-radius: 5px;
+      margin-right: 1em;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 0.5em;
+      transition: 500ms;
+      &:hover {
+        border: 1px solid rosybrown;
+        cursor: pointer;
+      }
+      .hamburger-dash {
+        border-radius: 5px;
+        border: 3px solid rosybrown;
+      }
+    }
+    .nav-list {
+      position: absolute;
+      transform: translateY(-100%);
+      display: flex;
+      top: 00%;
+      text-align: center;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 2;
+      width: 100%;
+      height: fit-content;
+      background: rosybrown;
+      animation-duration: 1000ms;
+      animation-timing-function: ease-out;
+      .nav-item {
+        margin: 1em;
+        .nav-link {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+ 

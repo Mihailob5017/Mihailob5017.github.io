@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  color: rosybrown;
+}
+img {
+  width: 100%;
+}
+
+p {
+  font-weight: 200;
+}
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+//animations
+@import "./helpers/animations";
+//navigation
+@media (min-width: 900px) {
+  @import "./navbar/navbar-large";
+}
+@media (max-width: 600px) {
+  @import "./navbar/navbar";
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  @import "./navbar/navbar-medium";
+}
+
+//pages
+@media (min-width: 900px) {
+  @import "./homepage/homepage-large";
+}
+@media (max-width: 600px) {
+  @import "./homepage/homepage";
+  @import './gallerypage/gallery';
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  @import "./homepage/homepage-medium";
+  @import "./gallerypage/gallery-medium";
+}
