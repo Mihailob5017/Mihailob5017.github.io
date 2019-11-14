@@ -701,6 +701,104 @@ h2 {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  body {
+    background: #222222;
+    overflow-x: hidden;
+  }
+  .location {
+    margin: 2em 0.2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .location .gdesmo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .location .gdesmo .adresa-slika {
+    padding: 1em;
+    margin-bottom: 0.1em;
+  }
+  .location .gdesmo .adresa-slika img {
+    border: 2px solid rosybrown;
+    border-radius: 1em;
+  }
+  .location .gdesmo .adresa-txt {
+    font-weight: 300;
+    padding-left: 1em;
+  }
+  .contact-us {
+    margin: 1em 0.2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-us h4 {
+    margin-bottom: 1em;
+    padding: 1em 0;
+    background: rosybrown;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .location-logo {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid rosybrown;
+  }
+  .location-links {
+    margin: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .location-links * {
+    font-size: 3rem;
+  }
+  .mailbtn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-decoration: none;
+    font-size: 2rem;
+    background: rosybrown;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 1em 0;
+    padding: 0.2em 0.5em;
+    border-radius: 1em;
+  }
+  footer {
+    margin-top: 2em;
+    padding: 0.5em 1em;
+    padding-bottom: 1em;
+    color: white;
+    background: rosybrown;
+    text-shadow: 1px 1px 1px black;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {

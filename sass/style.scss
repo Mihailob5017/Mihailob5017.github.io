@@ -41,6 +41,7 @@ h2 {
 @media (max-width: 600px) {
   @import "./homepage/homepage";
   @import "./gallerypage/gallery";
+  @import "./contactpage/contact";
 }
 @media (min-width: 600px) and (max-width: 900px) {
   @import "./homepage/homepage-medium";
