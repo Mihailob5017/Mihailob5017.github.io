@@ -11,7 +11,9 @@ body {
     display: flex;
     flex-direction: column-reverse;
     .adresa-slika {
+      transition: 500ms;
       img {
+        transition: 500ms;
         border: 2px solid rosybrown;
         border-radius: 1em;
       }
@@ -81,6 +83,7 @@ body {
   }
 }
 .mailbtn {
+  transition: 500ms;
   align-self: center;
   text-decoration: none;
   font-size: 2rem;
@@ -91,13 +94,7 @@ body {
   margin: 1em 0;
   padding: 0.2em 0.5em;
   border-radius: 1em;
+  outline: none;
 }
 
-footer {
-  margin-top: 2em;
-  padding: 0.5em 1em;
-  padding-bottom: 1em;
-  color: white;
-  background: rosybrown;
-  text-shadow: 1px 1px 1px black;
-}
+

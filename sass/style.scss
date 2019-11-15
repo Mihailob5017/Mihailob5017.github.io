@@ -37,6 +37,7 @@ h2 {
 @media (min-width: 900px) {
   @import "./homepage/homepage-large";
   @import "./gallerypage/gallery-large";
+  @import "./contactpage/contact-large";
 }
 @media (max-width: 600px) {
   @import "./homepage/homepage";
@@ -46,4 +47,5 @@ h2 {
 @media (min-width: 600px) and (max-width: 900px) {
   @import "./homepage/homepage-medium";
   @import "./gallerypage/gallery-medium";
+  @import "./contactpage/contact-medium";
 }
