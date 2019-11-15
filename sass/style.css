@@ -733,8 +733,27 @@ h2 {
     border-radius: 1em;
   }
   .location .gdesmo .adresa-txt {
-    font-weight: 300;
+    background: rosybrown;
     padding-left: 1em;
+  }
+  .location .gdesmo .adresa-txt h1 {
+    font-weight: 500;
+  }
+  .location .gdesmo .adresa-txt span {
+    text-shadow: 1px 1px 2px black;
+    margin-left: 0.1em;
+  }
+  .location .gdesmo .adresa-txt h2 {
+    margin-bottom: 1.2em;
+  }
+  .location .gdesmo .adresa-txt h3 {
+    margin-bottom: 1em;
+  }
+  .location .gdesmo .adresa-txt * {
+    margin: 0.3em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 300;
   }
   .contact-us {
     margin: 1em 0.2em;
@@ -746,7 +765,8 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contact-us h4 {
+  .contact-us h3 {
+    margin-top: 0.51em;
     margin-bottom: 1em;
     padding: 1em 0;
     background: rosybrown;
@@ -757,11 +777,14 @@ h2 {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+  .first {
+    border-bottom: 2px solid rosybrown;
+  }
   .location-logo {
     font-size: 2rem;
     display: block;
     text-align: center;
-    border-bottom: 2px solid rosybrown;
+    margin: 0.2em 0;
   }
   .location-links {
     margin: 1em 0;
