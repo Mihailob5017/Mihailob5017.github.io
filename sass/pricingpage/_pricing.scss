@@ -4,12 +4,15 @@ body {
   }
 .pricing-menu{
     margin: 1em;
+    min-height: fit-content;
 }
 .price-single{
     margin-bottom: 1em;
     border: 1px solid rosybrown;
     position: relative;
-    height: 40vh;
+    min-height: fit-content;
+    //subject to change
+    height: 350px;      
     .overlay{
         position: absolute;
         left: 0;
