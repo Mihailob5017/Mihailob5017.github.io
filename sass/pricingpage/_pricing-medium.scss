@@ -1,0 +1,47 @@
+body {
+    background: #222222;
+    overflow-x: hidden;
+  }
+.pricing-menu{
+   
+    margin: 1em auto;
+    max-width: 600px;
+    min-height: fit-content;
+}
+.price-single{
+    margin-bottom: 1em;
+    border: 1px solid rosybrown;
+    position: relative;
+    min-height: fit-content;
+    //subject to change
+    height: 400px;      
+    .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba($color: #000000, $alpha: .75);
+        .overlay-header{
+            font-size: 1.2rem;
+            text-align: center;
+            background: rosybrown;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+        .price{
+            font-size:1.2rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;   
+            padding: 0em 0.2em;
+            padding-top: 0.7em;
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
