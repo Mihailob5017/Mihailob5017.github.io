@@ -770,15 +770,17 @@ h2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-bottom: 20em;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .service-single {
     margin: 2em 0.5em;
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
+    border: 2px solid rosybrown;
   }
   .service-single .service-header {
-    border: 2px solid rosybrown;
-    border-radius: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -824,13 +826,13 @@ h2 {
   }
   .service-single .service-body {
     margin-top: 1em;
+    margin-left: 0.2em;
     display: none;
     font-size: 1.5rem;
     padding: 0.5em 0;
     border-top: none;
     -webkit-animation: 500ms ease-in;
             animation: 500ms ease-in;
-    border-bottom: 2px solid rosybrown;
   }
 }
 
