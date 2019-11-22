@@ -1,3 +1,4 @@
+//HIDES THE NAVBAR 
 const scrollup = e => {
   if (
     e.target.tagName != "UL" &&
@@ -28,7 +29,11 @@ document.querySelector(".hamburger").addEventListener("click", () => {
     document.body.addEventListener("click", scrollup);
   }, 1001);
 });
-
+//
+//
+//
+//
+//PLAYS AND STOPS THE VIDEO
 document.querySelectorAll(".video-start-btn").forEach(video =>
   video.addEventListener("click", e => {
     const video = e.target.parentNode.parentNode.querySelector("video");
@@ -44,3 +49,23 @@ document.querySelectorAll(".video-stop-btn").forEach(video =>
     video.pause();
   })
 );
+//
+//
+//
+//
+//DROPS DOWN
+document.querySelectorAll('.service-header-btn').forEach(btn=>{
+  btn.addEventListener('click',e=>{
+    let grandparentNode=e.target.parentNode.parentNode;
+    let bodyNode=grandparentNode.querySelector('.service-body');
+    
+   if (bodyNode.style.display=='none') {
+     bodyNode.style.display='inherit';
+     bodyNode.style.animationName='fade-in';
+    
+   }else{
+    bodyNode.style.display='none';
+   }
+    
+  })
+})

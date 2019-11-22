@@ -67,6 +67,42 @@ h2 {
   }
 }
 
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @media (min-width: 900px) {
   nav {
     position: -webkit-sticky;
@@ -721,6 +757,10 @@ h2 {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  body {
+    background: #222222;
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1063,6 +1103,55 @@ h2 {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  body {
+    background: #222222;
+    overflow-x: hidden;
+  }
+  .service-single {
+    margin: 2em 0.5em;
+  }
+  .service-single .service-header {
+    background: rosybrown;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service-single .service-header .service-single-image {
+    margin-top: 0.5em;
+  }
+  .service-single .service-header .service-single-image img {
+    width: 12em;
+    height: 12em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 1px solid rosybrown;
+    border-radius: 50%;
+  }
+  .service-single .service-header .service-header-name {
+    margin: 0.2em 0;
+    color: white;
+  }
+  .service-single .service-header .service-header-btn {
+    width: 100%;
+    font-size: 1.5rem;
+    border: 0px 2px solid rosybrown;
+  }
+  .service-single .service-body {
+    display: none;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rosybrown;
+    padding: 0.5em 0;
+    border-top: none;
+    -webkit-animation: 500ms ease-in;
+            animation: 500ms ease-in;
   }
 }
 
@@ -1409,6 +1498,10 @@ h2 {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  body {
+    background: #222222;
+    overflow-x: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -39,16 +39,19 @@ h2 {
   @import "./gallerypage/gallery-large";
   @import "./contactpage/contact-large";
   @import "./pricingpage/pricing-large";
+  @import "./servicespage/services-large";
 }
 @media (max-width: 600px) {
   @import "./homepage/homepage";
   @import "./gallerypage/gallery";
   @import "./contactpage/contact";
   @import "./pricingpage/pricing";
+  @import "./servicespage/services";
 }
 @media (min-width: 600px) and (max-width: 900px) {
   @import "./homepage/homepage-medium";
   @import "./gallerypage/gallery-medium";
   @import "./contactpage/contact-medium";
   @import "./pricingpage/pricing-medium";
+  @import "./servicespage/services-medium";
 }
