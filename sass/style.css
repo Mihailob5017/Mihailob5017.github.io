@@ -1,4 +1,5 @@
 * {
+  outline: none;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -760,6 +761,76 @@ h2 {
   body {
     background: #222222;
     overflow-x: hidden;
+  }
+  .services-container {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 20em;
+  }
+  .service-single {
+    margin: 2em 0.5em;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .service-single .service-header {
+    border: 2px solid rosybrown;
+    border-radius: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service-single .service-header .service-single-image {
+    margin-top: 0.5em;
+  }
+  .service-single .service-header .service-single-image img {
+    width: 12em;
+    height: 12em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 1px solid rosybrown;
+    border-radius: 50%;
+  }
+  .service-single .service-header .service-header-name {
+    text-align: center;
+    margin: 0.2em 0;
+    color: white;
+  }
+  .service-single .service-header .service-header-btn {
+    background: transparent;
+    border: none;
+    padding: 0.2em 0.2em 0 0.2em;
+    font-size: 1.5rem;
+    margin: 1em;
+    border-bottom: 2px solid rosybrown;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    cursor: pointer;
+  }
+  .service-single .service-header .service-header-btn:hover {
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 1.7rem;
+  }
+  .service-single .service-body {
+    margin-top: 1em;
+    display: none;
+    font-size: 1.5rem;
+    padding: 0.5em 0;
+    border-top: none;
+    -webkit-animation: 500ms ease-in;
+            animation: 500ms ease-in;
+    border-bottom: 2px solid rosybrown;
   }
 }
 

@@ -2,3 +2,60 @@ body {
     background: #222222;
     overflow-x: hidden;
   }
+  .services-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20em;
+  }
+  .service-single{
+    margin: 2em 0.5em;
+    flex-basis: 33%;
+    .service-header{
+        border: 2px solid rosybrown;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .service-single-image{ 
+            margin-top: 0.5em;
+            img{
+                width: 12em;
+                height: 12em;
+                object-fit: cover;
+                border: 1px solid rosybrown;
+                border-radius: 50%;
+            }
+        }
+        .service-header-name{
+          text-align: center;
+            margin: 0.2em 0;
+            color: white;
+        }
+        .service-header-btn{
+           background: transparent;
+           border: none;
+           padding:0.2em 0.2em 0 0.2em;
+           font-size: 1.5rem;
+           margin: 1em;
+           border-bottom:2px solid rosybrown;
+           transition: 500ms;
+           
+           cursor: pointer;
+          &:hover{
+            color: white;
+            border-bottom:2px solid white;
+            font-size:1.7rem
+          }
+        }
+    }
+    .service-body{
+        margin-top: 1em;
+        display: none;
+        font-size: 1.5rem;
+        padding: 0.5em 0;
+        border-top: none;
+        animation: 500ms ease-in;
+        border-bottom: 2px solid rosybrown;
+    }
+}
