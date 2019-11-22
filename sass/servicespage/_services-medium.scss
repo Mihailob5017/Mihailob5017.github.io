@@ -2,3 +2,45 @@ body {
     background: #222222;
     overflow-x: hidden;
   }
+  .services-container{
+    margin: 0 auto;
+    margin-top: 2em;
+    max-width: 700px;
+    border: 2px solid rosybrown;
+  }
+  .service-single{
+    margin: 2em 0.5em;
+    .service-header{
+        background: rosybrown;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .service-single-image{ 
+            margin-top: 0.5em;
+            img{
+                width: 12em;
+                height: 12em;
+                object-fit: cover;
+                border: 1px solid rosybrown;
+                border-radius: 50%;
+            }
+        }
+        .service-header-name{
+            margin: 0.2em 0;
+            color: white;
+        }
+        .service-header-btn{
+            width: 100%;
+            font-size: 1.5rem;
+            border: 0px 2px solid rosybrown;
+        }
+    }
+    .service-body{
+        display: none;
+        font-size: 1.2rem;
+
+        padding: 0.5em 0;
+        border-top: none;
+        animation: 500ms ease-in;
+    }
+}
