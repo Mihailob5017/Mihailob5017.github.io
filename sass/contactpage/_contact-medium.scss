@@ -15,14 +15,10 @@ body {
       flex-direction: column-reverse;
       .adresa-slika {
         transition: 500ms;
-        img {
-         transition: 500ms;
-          border: 2px solid rosybrown;
-         
-        }
-        padding: 0em;
-        margin-bottom: 0.6em;
+        height: 20em;
+        margin:3em 1em;
       }
+      
       .adresa-txt {
         background:rosybrown;
         padding-left: 0em;

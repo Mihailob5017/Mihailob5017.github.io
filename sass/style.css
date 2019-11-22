@@ -565,13 +565,8 @@ h2 {
             flex-direction: column-reverse;
   }
   .location .gdesmo .adresa-slika {
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    margin-bottom: 0.6em;
-  }
-  .location .gdesmo .adresa-slika img {
-    -webkit-transition: 500ms;
-    transition: 500ms;
+    height: 20em;
+    margin: 1em;
   }
   .location .gdesmo .adresa-txt {
     padding-left: 0em;
@@ -924,13 +919,8 @@ h2 {
   .location .gdesmo .adresa-slika {
     -webkit-transition: 500ms;
     transition: 500ms;
-    padding: 1em;
-    margin-bottom: 0.1em;
-  }
-  .location .gdesmo .adresa-slika img {
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    border: 2px solid rosybrown;
+    height: 15em;
+    margin: 2em 1em;
     border-radius: 1em;
   }
   .location .gdesmo .adresa-txt {
@@ -977,6 +967,11 @@ h2 {
     text-align: start;
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  .contact-us h3 span {
+    color: white;
+    padding: 0 0.4em;
+    font-size: 1.4rem;
   }
   .first {
     border-bottom: 2px solid rosybrown;
@@ -1272,13 +1267,8 @@ h2 {
   .location .gdesmo .adresa-slika {
     -webkit-transition: 500ms;
     transition: 500ms;
-    padding: 0em;
-    margin-bottom: 0.6em;
-  }
-  .location .gdesmo .adresa-slika img {
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    border: 2px solid rosybrown;
+    height: 20em;
+    margin: 3em 1em;
   }
   .location .gdesmo .adresa-txt {
     background: rosybrown;

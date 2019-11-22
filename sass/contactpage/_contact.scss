@@ -12,13 +12,9 @@ body {
     flex-direction: column-reverse;
     .adresa-slika {
       transition: 500ms;
-      img {
-        transition: 500ms;
-        border: 2px solid rosybrown;
-        border-radius: 1em;
-      }
-      padding: 1em;
-      margin-bottom: 0.1em;
+      height: 15em;
+      margin:2em 1em;
+      border-radius: 1em;
     }
     .adresa-txt {
       background:rosybrown;
@@ -61,6 +57,11 @@ body {
     text-shadow: 1px 1px 1px black;
     text-align: start;
     align-self: flex-start;
+    span{
+      color: white;
+      padding: 0 0.4em;
+      font-size: 1.4rem;
+    }
 
   }
 }
