@@ -69,3 +69,17 @@ document.querySelectorAll('.service-header-btn').forEach(btn=>{
     
   })
 })
+
+//GLIDER
+new Glider(document.querySelector('.glider'), {
+  duration:1,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  draggable: true,
+  dots: '.dots',
+  rewind:true,
+  arrows: {
+    prev: '.btn-prev',
+    next: '.btn-next'
+  }
+});

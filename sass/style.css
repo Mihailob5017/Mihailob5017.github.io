@@ -1231,6 +1231,9 @@ body {
     -webkit-animation: 500ms ease-in;
             animation: 500ms ease-in;
   }
+  body {
+    overflow-y: none;
+  }
   .about-text-image {
     margin: 2em 1em;
   }
@@ -1244,11 +1247,43 @@ body {
     padding: 0.1em;
   }
   .about-text-image h4 {
-    font-weight: 400;
+    font-weight: 300;
   }
   .about-text-image .about-texts {
     padding: 0.5em 0.3em;
     border: 1px solid rosybrown;
+  }
+  .glider-logo {
+    margin: 0.5em 1em;
+    text-align: center;
+    border-bottom: 2px solid rosybrown;
+  }
+  .glider {
+    margin: 0 1em;
+  }
+  .glider img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .glide-btns {
+    margin: 0 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .glide-btns .glide-btn {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    font-size: 1.2rem;
+    background: transparent;
+    border: 2px solid rosybrown;
+    border-radius: 0.2em;
+    padding: 0.2em;
   }
 }
 

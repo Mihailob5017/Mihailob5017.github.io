@@ -1,3 +1,6 @@
+body{
+    overflow-y: none;
+}
 .about-text-image{
     margin: 2em 1em;
     h1{
@@ -10,10 +13,37 @@
         }
     }
     h4{
-        font-weight: 400;
+        font-weight: 300;
     }
     .about-texts{
         padding: 0.5em 0.3em;
         border: 1px solid rosybrown;
     }
+}
+.glider-logo{
+    margin: 0.5em 1em;
+    text-align: center;
+    border-bottom: 2px solid rosybrown;
+}
+.glider{
+    margin: 0 1em;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.glide-btns{
+    margin: 0 1em;
+    
+    display: flex;
+    justify-content: space-between;
+   .glide-btn{
+        flex-basis: 40%;
+        font-size: 1.2rem;
+        background: transparent;
+        border: 2px solid rosybrown;
+        border-radius: 0.2em;
+        padding: 0.2em;
+   }
 }
