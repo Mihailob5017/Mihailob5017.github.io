@@ -1,4 +1,4 @@
-//HIDES THE NAVBAR 
+//HIDES THE NAVBAR
 const scrollup = e => {
   if (
     e.target.tagName != "UL" &&
@@ -37,7 +37,7 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 document.querySelectorAll(".video-start-btn").forEach(video =>
   video.addEventListener("click", e => {
     const video = e.target.parentNode.parentNode.querySelector("video");
-    video.style.opacity='1';
+    video.style.opacity = "1";
     video.play();
   })
 );
@@ -45,7 +45,7 @@ document.querySelectorAll(".video-start-btn").forEach(video =>
 document.querySelectorAll(".video-stop-btn").forEach(video =>
   video.addEventListener("click", e => {
     const video = e.target.parentNode.parentNode.querySelector("video");
-    video.style.opacity='0.5';
+    video.style.opacity = "0.5";
     video.pause();
   })
 );
@@ -54,32 +54,53 @@ document.querySelectorAll(".video-stop-btn").forEach(video =>
 //
 //
 //DROPS DOWN
-document.querySelectorAll('.service-header-btn').forEach(btn=>{
-  btn.addEventListener('click',e=>{
-    let grandparentNode=e.target.parentNode.parentNode;
-    let bodyNode=grandparentNode.querySelector('.service-body');
-    
-   if (bodyNode.style.display=='none') {
-     bodyNode.style.display='inherit';
-     bodyNode.style.animationName='fade-in';
-    
-   }else{
-    bodyNode.style.display='none';
-   }
-    
-  })
-})
+document.querySelectorAll(".service-header-btn").forEach(btn => {
+  btn.addEventListener("click", e => {
+    let grandparentNode = e.target.parentNode.parentNode;
+    let bodyNode = grandparentNode.querySelector(".service-body");
+
+    if (bodyNode.style.display == "none") {
+      bodyNode.style.display = "inherit";
+      bodyNode.style.animationName = "fade-in";
+    } else {
+      bodyNode.style.display = "none";
+    }
+  });
+});
 
 //GLIDER
-new Glider(document.querySelector('.glider'), {
-  duration:1,
+new Glider(document.querySelector(".glider"), {
+  duration: 1,
   slidesToShow: 2,
   slidesToScroll: 1,
   draggable: true,
-  dots: '.dots',
-  rewind:true,
+  dots: ".dots",
+  rewind: true,
   arrows: {
-    prev: '.btn-prev',
-    next: '.btn-next'
-  }
+    prev: ".btn-prev",
+    next: ".btn-next"
+  },
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 600,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 3,
+        slidesToScroll: 1,
+
+        duration: 1
+      }
+    },
+    {
+      // screens greater than >= 1024px
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+
+        duration: 1.2
+      }
+    }
+  ]
 });

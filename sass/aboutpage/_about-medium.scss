@@ -1,0 +1,52 @@
+body{
+    overflow-y: none;
+}
+.about-text-image{
+    margin: 2em auto;
+    max-width: 700px;
+    h1{
+        margin-bottom: 1em ;
+        span{
+            font-size: 1.1em;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            padding: 0.1em;
+        }
+    }
+    h4{
+        font-weight: 300;
+    }
+    .about-texts{
+        padding: 0.5em 0.3em;
+        border: 1px solid rosybrown;
+    }
+}
+.glider-logo{
+    margin: 0.5em 1em;
+    text-align: center;
+    border-bottom: 2px solid rosybrown;
+}
+.glider{
+    max-height: 15em;
+    margin: 0 1em;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+        border: 1px solid rosybrown;
+    }
+}
+.glide-btns{
+    margin: 0 1em;
+    
+    display: flex;
+    justify-content: space-between;
+   .glide-btn{
+        flex-basis: 40%;
+        font-size: 1.2rem;
+        background: transparent;
+        border: 2px solid rosybrown;
+        border-radius: 0.2em;
+        padding: 0.2em;
+   }
+}

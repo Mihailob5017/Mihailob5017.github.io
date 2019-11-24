@@ -839,6 +839,78 @@ body {
     -webkit-animation: 500ms ease-in;
             animation: 500ms ease-in;
   }
+  body {
+    overflow-y: none;
+  }
+  .reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .about-text-image {
+    margin: 2em auto;
+    max-width: 1500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about-text-image h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+  .about-text-image h1 span {
+    font-size: 1.1em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 0.1em;
+  }
+  .about-text-image h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  .about-text-image .about-texts {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    padding: 0.5em 0.3em;
+  }
+  .glider-logo {
+    margin: 0.5em 1em;
+    text-align: center;
+    border-bottom: 2px solid rosybrown;
+  }
+  .glider {
+    max-height: 25em;
+    margin: 0 1em;
+  }
+  .glider img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    border: 1px solid rosybrown;
+  }
+  .glide-btns {
+    margin: 0 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .glide-btns .glide-btn {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    font-size: 1.2rem;
+    background: transparent;
+    border: 2px solid rosybrown;
+    border-radius: 0.2em;
+    padding: 0.2em;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1684,6 +1756,63 @@ body {
     border-top: none;
     -webkit-animation: 500ms ease-in;
             animation: 500ms ease-in;
+  }
+  body {
+    overflow-y: none;
+  }
+  .about-text-image {
+    margin: 2em auto;
+    max-width: 700px;
+  }
+  .about-text-image h1 {
+    margin-bottom: 1em;
+  }
+  .about-text-image h1 span {
+    font-size: 1.1em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 0.1em;
+  }
+  .about-text-image h4 {
+    font-weight: 300;
+  }
+  .about-text-image .about-texts {
+    padding: 0.5em 0.3em;
+    border: 1px solid rosybrown;
+  }
+  .glider-logo {
+    margin: 0.5em 1em;
+    text-align: center;
+    border-bottom: 2px solid rosybrown;
+  }
+  .glider {
+    max-height: 15em;
+    margin: 0 1em;
+  }
+  .glider img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    border: 1px solid rosybrown;
+  }
+  .glide-btns {
+    margin: 0 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .glide-btns .glide-btn {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    font-size: 1.2rem;
+    background: transparent;
+    border: 2px solid rosybrown;
+    border-radius: 0.2em;
+    padding: 0.2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
