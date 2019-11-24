@@ -27,8 +27,8 @@ body{
     border-bottom: 2px solid rosybrown;
 }
 .glider{
-    max-height: 15em;
-    margin: 0 1em;
+    max-width: 700px;
+    margin: 0 auto;
     img{
         height: 100%;
         width: 100%;
@@ -37,8 +37,8 @@ body{
     }
 }
 .glide-btns{
-    margin: 0 1em;
-    
+    margin: 0 auto;
+    max-width: 700px;
     display: flex;
     justify-content: space-between;
    .glide-btn{

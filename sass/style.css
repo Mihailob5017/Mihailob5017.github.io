@@ -880,11 +880,11 @@ body {
   .glider-logo {
     margin: 0.5em 1em;
     text-align: center;
-    border-bottom: 2px solid rosybrown;
+    font-size: 2rem;
   }
   .glider {
-    max-height: 25em;
-    margin: 0 1em;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   .glider img {
     height: 100%;
@@ -894,7 +894,8 @@ body {
     border: 1px solid rosybrown;
   }
   .glide-btns {
-    margin: 0 1em;
+    margin: 0 auto;
+    max-width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1786,8 +1787,8 @@ body {
     border-bottom: 2px solid rosybrown;
   }
   .glider {
-    max-height: 15em;
-    margin: 0 1em;
+    max-width: 700px;
+    margin: 0 auto;
   }
   .glider img {
     height: 100%;
@@ -1797,7 +1798,8 @@ body {
     border: 1px solid rosybrown;
   }
   .glide-btns {
-    margin: 0 1em;
+    margin: 0 auto;
+    max-width: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

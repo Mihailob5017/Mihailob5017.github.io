@@ -29,11 +29,11 @@ body{
 .glider-logo{
     margin: 0.5em 1em;
     text-align: center;
-    border-bottom: 2px solid rosybrown;
+    font-size: 2rem;
 }
 .glider{
-    max-height: 25em;
-    margin: 0 1em;
+    max-width: 1200px;
+    margin: 0 auto;
     img{
         height: 100%;
         width: 100%;
@@ -42,8 +42,8 @@ body{
     }
 }
 .glide-btns{
-    margin: 0 1em;
-    
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
    .glide-btn{
