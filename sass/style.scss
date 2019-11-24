@@ -20,7 +20,10 @@ h1 {
 h2 {
   font-weight: 300;
 }
-
+body {
+  background: #222222;
+  overflow-y: none;
+}
 //animations
 @import "./helpers/animations";
 //navigation
@@ -41,6 +44,7 @@ h2 {
   @import "./contactpage/contact-large";
   @import "./pricingpage/pricing-large";
   @import "./servicespage/services-large";
+  @import "./aboutpage/about-large";
 }
 @media (max-width: 600px) {
   @import "./homepage/homepage";
@@ -48,11 +52,14 @@ h2 {
   @import "./contactpage/contact";
   @import "./pricingpage/pricing";
   @import "./servicespage/services";
+  @import "./aboutpage/about";
 }
+
 @media (min-width: 600px) and (max-width: 900px) {
   @import "./homepage/homepage-medium";
   @import "./gallerypage/gallery-medium";
   @import "./contactpage/contact-medium";
   @import "./pricingpage/pricing-medium";
   @import "./servicespage/services-medium";
+  @import "./aboutpage/about-medium";
 }

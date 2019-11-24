@@ -24,6 +24,11 @@ h2 {
   font-weight: 300;
 }
 
+body {
+  background: #222222;
+  overflow-y: none;
+}
+
 @-webkit-keyframes slide-menu {
   from {
     -webkit-transform: translateY(-100%);
