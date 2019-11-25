@@ -68,39 +68,36 @@ document.querySelectorAll(".service-header-btn").forEach(btn => {
   });
 });
 
-//GLIDER
-new Glider(document.querySelector(".glider"), {
-  duration: 1,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: ".dots",
-  rewind: true,
-  arrows: {
-    prev: ".btn-prev",
-    next: ".btn-next"
-  },
-  responsive: [
-    {
-      // screens greater than >= 775px
-      breakpoint: 600,
-      settings: {
-        // Set to `auto` and provide item width to adjust to viewport
-        slidesToShow: 3,
-        slidesToScroll: 1,
-
-        duration: 1
+//JQUERRY
+$(document).ready(() => {
+  $(".slider-logos").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          infinite: true,} 
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          infinite: true,}
       }
-    },
-    {
-      // screens greater than >= 1024px
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-
-        duration: 1.2
-      }
-    }
-  ]
+    ]
+  });
 });

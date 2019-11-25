@@ -31,27 +31,11 @@ body{
     text-align: center;
     font-size: 2rem;
 }
-.glider{
-    max-width: 1200px;
-    margin: 0 auto;
-    img{
-        height: 100%;
-        width: 100%;
-        object-fit: fill;
-        border: 1px solid rosybrown;
+.slider-logos {
+    margin: 1em;
+    img {
+      width: 100%;
+      height: 20em;
+      object-fit: cover;
     }
-}
-.glide-btns{
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-   .glide-btn{
-        flex-basis: 40%;
-        font-size: 1.2rem;
-        background: transparent;
-        border: 2px solid rosybrown;
-        border-radius: 0.2em;
-        padding: 0.2em;
-   }
-}
+  }
