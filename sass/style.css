@@ -1038,6 +1038,12 @@ body {
     border-radius: 0.5em;
     cursor: pointer;
   }
+  .reviews .reviews-btns button:active {
+    color: white;
+    text-shadow: 1px 1px 1px #222222;
+    background: white;
+    border: 2px solid rosybrown;
+  }
   footer {
     margin-top: 2em;
     padding: 0.5em 1em;
@@ -1321,6 +1327,12 @@ body {
     font-size: 1.5rem;
     color: rosybrown;
     background: #222222;
+    border: 2px solid rosybrown;
+  }
+  .service-single .service-header .service-header-btn:active {
+    color: white;
+    text-shadow: 1px 1px 1px #222222;
+    background: white;
     border: 2px solid rosybrown;
   }
   .service-single .service-body {
@@ -1768,6 +1780,12 @@ body {
     font-size: 1.5rem;
     color: rosybrown;
     background: #222222;
+    border: 2px solid rosybrown;
+  }
+  .service-single .service-header .service-header-btn:active {
+    color: white;
+    text-shadow: 1px 1px 1px #222222;
+    background: white;
     border: 2px solid rosybrown;
   }
   .service-single .service-body {

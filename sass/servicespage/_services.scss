@@ -30,6 +30,12 @@ body {
             color: rosybrown;
             background: #222222;
             border: 2px solid rosybrown;
+            &:active{
+                color: white;
+                text-shadow: 1px 1px 1px #222222;
+                background: white;
+                border: 2px solid rosybrown;
+            }
         }
     }
     .service-body{

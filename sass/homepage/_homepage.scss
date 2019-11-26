@@ -92,6 +92,12 @@ header{
     border: 2px solid rosybrown;
     border-radius: 0.5em;
     cursor: pointer;
+    &:active{
+      color: white;
+      text-shadow: 1px 1px 1px #222222;
+      background: white;
+      border: 2px solid rosybrown;
+  }
   }
 }
 }
