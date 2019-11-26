@@ -58,8 +58,6 @@ document.querySelectorAll(".service-header-btn").forEach(btn => {
   btn.addEventListener("click", e => {
     let grandparentNode = e.target.parentNode.parentNode;
     let bodyNode = grandparentNode.querySelector(".service-body");
-    console.log('is clicked');
-    
     if (bodyNode.style.display == "none" || bodyNode.style.display=='') {
       bodyNode.style.display = "inherit";
       bodyNode.style.animationName = "fade-in";
