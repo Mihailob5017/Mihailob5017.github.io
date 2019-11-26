@@ -354,74 +354,61 @@ body {
     overflow-y: none;
   }
   header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    border: 1px solid rosybrown;
-    background: #111111;
   }
-  header .header-arrow {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    -ms-flex-preferred-size: 5%;
-        flex-basis: 5%;
-    border: 1px solid rosybrown;
-    margin-top: 0.5em;
+  header .slide-header {
+    margin: -1em auto;
+    margin-bottom: -5em;
+    width: 80%;
+  }
+  header .slide-header .single-slider {
     text-align: center;
-    padding: 0 0.2em;
-    font-size: 5rem;
-    font-weight: 900;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  header .header-arrow:hover {
     cursor: pointer;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #111111;
-    background-color: rosybrown;
+    padding: auto;
   }
-  header .header-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  header .slide-header .single-slider .slider-image-container {
+    display: block;
+    margin: 1em auto;
+    width: 100vw;
+    height: 700px;
   }
-  header .header-main .image-container {
-    width: 700px;
-    margin: 1em 0em;
-    -webkit-transition: 1000ms;
-    transition: 1000ms;
-  }
-  header .header-main .image-container #image-placeholder {
+  header .slide-header .single-slider .slider-image-container img {
+    opacity: 0.7;
+    width: 80%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  header .header-main .header-more-info {
-    font-size: 1.5rem;
-    margin: 1em 0em;
+  header .slide-header .single-slider .slick-header {
+    -webkit-transform: translateY(-350px);
+            transform: translateY(-350px);
+    font-size: 2rem;
   }
-  header .header-main .header-more-info * {
-    display: block;
-    text-align: center;
-    margin: 0.2em;
+  header .slide-header .single-slider .slick-header * {
+    color: white;
+    text-shadow: 1px 1px 1px  black;
+  }
+  header .header-prev, header .header-next {
+    height: 700px;
+    width: 10%;
+    background: transparent;
+    border: none;
+    font-size: 10rem;
+    border: 1px solid rosybrown;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  header .header-prev:hover, header .header-next:hover {
+    cursor: pointer;
+    background: rosybrown;
+    border: 2px solid white;
+  }
+  header .header-prev:hover i, header .header-next:hover i {
+    color: white;
   }
   .head-name {
     font-size: 4rem;
@@ -429,11 +416,12 @@ body {
     padding-left: 1em;
     letter-spacing: 1px;
     text-align: left;
-    margin: 1em 0;
+    margin: 1em;
     color: rosybrown;
     text-shadow: 1px 1px 1px black;
   }
   .head-quote {
+    margin: 0.5em;
     text-align: right;
     padding-right: 1em;
     display: -webkit-box;
@@ -454,6 +442,7 @@ body {
     margin: 0.4em;
   }
   .head-body {
+    margin: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -470,6 +459,50 @@ body {
     text-align: left;
     margin: 1em;
     font-size: 1.5rem;
+  }
+  .reviews {
+    margin: 2em 1em;
+  }
+  .reviews .slide {
+    background: transparent;
+    border: 2px solid rosybrown;
+    padding: 2em 0.5em;
+  }
+  .reviews .slide * {
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: rosybrown;
+  }
+  .reviews .slide .slide-name {
+    text-align: right;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  .reviews .reviews-btns {
+    margin-top: 0.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .reviews .reviews-btns button {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    padding: 0.1em;
+    font-size: 1.6rem;
+    background: transparent;
+    border: 2px solid rosybrown;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  .reviews .reviews-btns button:hover {
+    background: rosybrown;
+    color: white;
+    border: 2px solid white;
   }
   footer {
     margin-top: 2em;
@@ -674,7 +707,13 @@ body {
         justify-content: space-around;
   }
   .location-links * {
+    -webkit-transition: 500ms;
+    transition: 500ms;
     font-size: 5rem;
+  }
+  .location-links *:hover i {
+    cursor: pointer;
+    color: white;
   }
   .mailbtn {
     -webkit-transition: 500ms;
@@ -899,66 +938,39 @@ body {
     overflow-y: none;
   }
   header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 350px;
-    width: 100%;
-    border: 1px solid rosybrown;
-    background: #111111;
   }
-  header .header-arrow {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    -ms-flex-preferred-size: 10%;
-        flex-basis: 10%;
+  header .slide-header {
+    margin: 1em auto;
+    width: 80%;
+  }
+  header .slide-header .single-slider {
     text-align: center;
-    font-size: 3rem;
-    font-weight: 900;
+    cursor: pointer;
+    padding: auto;
   }
-  header .header-main {
-    max-width: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .header-main .image-container {
-    margin: 1em 0em;
+  header .slide-header .single-slider .slider-image-container {
+    display: block;
+    margin: 1em auto;
     width: 200px;
     height: 200px;
-    -webkit-transition: 1000ms;
-    transition: 1000ms;
   }
-  header .header-main .image-container #image-placeholder {
+  header .slide-header .single-slider .slider-image-container img {
+    border-radius: 50%;
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 50%;
   }
-  header .header-main .header-more-info {
-    margin: 1em 0em;
-  }
-  header .header-main .header-more-info * {
-    display: block;
-    text-align: center;
-    margin: 0.2em;
+  header .header-prev, header .header-next {
+    width: 10%;
+    background: transparent;
+    border: none;
+    font-size: 4rem;
   }
   .head-name {
     font-size: 1.5rem;
@@ -991,6 +1003,40 @@ body {
   .head-body .head-body-text {
     text-align: left;
     margin: 0.2em 1em;
+  }
+  .reviews {
+    margin: 1em 0.5em;
+  }
+  .reviews .slide {
+    background: rosybrown;
+    padding: 0.5em;
+  }
+  .reviews .slide * {
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  .reviews .slide .slide-name {
+    text-align: right;
+  }
+  .reviews .reviews-btns {
+    margin-top: 0.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .reviews .reviews-btns button {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    padding: 0.1em;
+    font-size: 1.2rem;
+    background: transparent;
+    border: 2px solid rosybrown;
+    border-radius: 0.5em;
+    cursor: pointer;
   }
   footer {
     margin-top: 2em;
@@ -1272,7 +1318,9 @@ body {
   .service-single .service-header .service-header-btn {
     width: 100%;
     font-size: 1.5rem;
-    border: 0px 2px solid rosybrown;
+    color: rosybrown;
+    background: #222222;
+    border: 2px solid rosybrown;
   }
   .service-single .service-body {
     display: none;
@@ -1327,67 +1375,41 @@ body {
     overflow-y: none;
   }
   header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 350px;
-    width: 100%;
-    border: 1px solid rosybrown;
-    background: #111111;
   }
-  header .header-arrow {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-flex-preferred-size: 15%;
-        flex-basis: 15%;
+  header .slide-header {
+    margin: 1em auto;
+    width: 80%;
+  }
+  header .slide-header .single-slider {
     text-align: center;
-    font-size: 4rem;
-    font-weight: 900;
+    cursor: pointer;
+    padding: auto;
   }
-  header .header-main {
-    max-width: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  header .slide-header .single-slider .slider-image-container {
+    display: block;
+    margin: 1em auto;
+    width: 350px;
+    height: 350px;
   }
-  header .header-main .image-container {
-    margin: 1em 0em;
-    width: 400px;
-    height: 400px;
-    -webkit-transition: 1000ms;
-    transition: 1000ms;
-  }
-  header .header-main .image-container #image-placeholder {
+  header .slide-header .single-slider .slider-image-container img {
+    border-radius: 50%;
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 50%;
   }
-  header .header-main .header-more-info {
-    margin: 1em 0em;
-  }
-  header .header-main .header-more-info * {
-    display: block;
-    text-align: center;
-    margin: 0.2em;
+  header .header-prev, header .header-next {
+    width: 10%;
+    background: transparent;
+    border: none;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 6rem;
   }
   .head-name {
     font-size: 1.5rem;
@@ -1422,6 +1444,40 @@ body {
     font-size: 1.2rem;
     text-align: left;
     margin: 0.2em 1em;
+  }
+  .reviews {
+    margin: 1em 0.5em;
+  }
+  .reviews .slide {
+    background: rosybrown;
+    padding: 0.5em;
+  }
+  .reviews .slide * {
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  .reviews .slide .slide-name {
+    text-align: right;
+  }
+  .reviews .reviews-btns {
+    margin-top: 0.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .reviews .reviews-btns button {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    padding: 0.1em;
+    font-size: 1.2rem;
+    background: transparent;
+    border: 2px solid rosybrown;
+    border-radius: 0.5em;
+    cursor: pointer;
   }
   footer {
     margin-top: 2em;
@@ -1673,7 +1729,6 @@ body {
     margin: 0 auto;
     margin-top: 2em;
     max-width: 700px;
-    border: 2px solid rosybrown;
   }
   .service-single {
     margin: 2em 0.5em;
@@ -1709,7 +1764,9 @@ body {
   .service-single .service-header .service-header-btn {
     width: 100%;
     font-size: 1.5rem;
-    border: 0px 2px solid rosybrown;
+    color: rosybrown;
+    background: #222222;
+    border: 2px solid rosybrown;
   }
   .service-single .service-body {
     display: none;

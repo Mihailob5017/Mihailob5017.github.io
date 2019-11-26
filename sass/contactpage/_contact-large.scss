@@ -85,7 +85,14 @@ body {
     justify-content: space-around;
   
     * {
+      transition: 500ms;
       font-size: 5rem;
+      &:hover{
+        i{
+          cursor: pointer;
+          color: white;
+        }
+      }
     }
   }
   .mailbtn {

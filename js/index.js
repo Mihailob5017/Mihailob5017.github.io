@@ -70,11 +70,27 @@ document.querySelectorAll(".service-header-btn").forEach(btn => {
 
 //JQUERRY
 $(document).ready(() => {
+
+  $('.reviews-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '.btn-left',
+    prevArrow: '.btn-right'
+  })
+  $('.slide-header').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '.header-next',
+    prevArrow: '.header-prev'
+  })
+
+
+
   $(".slider-logos").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     arrows: false,
     infinite: true,
     responsive: [
@@ -84,7 +100,7 @@ $(document).ready(() => {
           slidesToShow: 4,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
           arrows: false,
           infinite: true,} 
       },
@@ -94,7 +110,7 @@ $(document).ready(() => {
           slidesToShow: 3,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
           arrows: false,
           infinite: true,}
       }

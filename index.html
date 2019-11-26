@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/6a93c8f7bd.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./sass/slick-theme.css"/>
+    <link rel="stylesheet" href="./sass/slick.css"/>
     <link rel="stylesheet" href="./sass/style.css" />
     <title>Beauty Center By M</title>
   </head>
@@ -41,17 +44,43 @@
     </nav>
     <!--CHAROUSEL WHEEL-->
     <header >
-        <div class="header-arrow" id="arrow-prev">&#x276E</div>
-        <div class="header-main">
-                <div class="image-container">
-                    <img id="image-placeholder" src="./images/image4.jpg" alt="ponuda-placehoalder">
-                </div>
-                <div class="header-more-info">
-                    <h2>Ponuda neka</h2>
-                    <a href="#">Pogledajte</a>
-                </div>
+        <button class="header-prev"> <i class="fas fa-angle-left"></i> </button>
+       <div class="slide-header">
+         <!-- SLIDE SINGLE -->
+          <div class="single-slider">
+            <div class="slider-image-container"><img src="./images/image12.jpg" alt="slick-image"></div>
+            <div class="slick-header">
+              <h1>Usluga 1</h1>
+              <a href="./pages/services.html">Saznaj Vise</a>
             </div>
-        <div class="header-arrow " id="arrow-next">&#x276F</div>
+          </div>
+           <!-- SLIDE SINGLE -->
+           <div class="single-slider">
+              <div class="slider-image-container"><img src="./images/image7.jpg" alt="slick-image"></div>
+              <div class="slick-header">
+                <h1>Usluga 2</h1>
+                <a href="./pages/services.html">Saznaj Vise</a>
+              </div>
+            </div>
+             <!-- SLIDE SINGLE -->
+             <div class="single-slider">
+                <div class="slider-image-container"><img src="./images/image1.jpg" alt="slick-image"></div>
+                <div class="slick-header">
+                  <h1>Usluga 3</h1>
+                  <a href="./pages/services.html">Saznaj Vise</a>
+                </div>
+              </div>
+             <!-- SLIDE SINGLE -->
+             <div class="single-slider">
+                <div class="slider-image-container"><img src="./images/image7.jpg" alt="slick-image"></div>
+                <div class="slick-header">
+                  <h1>Usluga 4</h1>
+                  <a href="./pages/services.html">Saznaj Vise</a>
+                </div>
+              </div>
+
+       </div>
+         <button class="header-next"> <i class="fas fa-angle-right"></i> </button>
     </header>
     <!--LOGO,ABOUT,OTHER-->
     <div class="container">
@@ -61,16 +90,53 @@
       </article>
       <article class="head-body">
         <div class="article-image-container">
-          <img src="./images/image13.jpg" alt="image-naem">
+          <img src="./images/image11.jpg" alt="image-naem">
           
         </div>
         <div class="head-body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio voluptatem sint odio, aspernatur aut repellendus consequatur temporibus quia eligendi incidunt expedita, nisi dolor facere iure dignissimos delectus maiores perspiciatis!</div>
-          
       </article>
+      <div class="reviews">
+          <div class="reviews-slider">
+            <!-- SLide 1 -->
+              <div class="slide">
+                  <p class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus cum illo inventore. Quaerat itaquelestias amet ad!</p>
+                  <p class="slide-name">-Mihailo Boskovic</p>
+              </div>
+              <!-- Slide 2 -->
+              <div class="slide">
+                  <p class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus cum illo inventore. Quaerat itaquelestias amet ad!</p>
+                  <p class="slide-name">-Mihailo Boskovic</p>
+              </div>
+              <!-- Slide 3 -->
+              <div class="slide">
+                  <p class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus cum illo inventore. Quaerat itaquelestias amet ad!</p>
+                  <p class="slide-name">-Mihailo Boskovic</p>
+              </div>
+              <!-- Slide 4 -->
+              <div class="slide">
+                  <p class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus cum illo inventore. Quaerat itaquelestias amet ad!</p>
+                  <p class="slide-name">-Mihailo Boskovic</p>
+              </div>
+              <!-- Slide 5 -->
+              <div class="slide">
+                  <p class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus cum illo inventore. Quaerat itaquelestias amet ad!</p>
+                  <p class="slide-name">-Mihailo Boskovic</p>
+              </div>
+          </div>
+          <div class="reviews-btns">
+            <button class="btn-right">Prosli</button>
+            <button class="btn-left">Sledeci</button>
+          </div>
+        </div>
     </div>
     <footer>
       Beauty Palace By M Copyright&#9400 2019
     </footer>
   </body>
+   <!-- JQUERRY -->
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <!-- VANILLA -->
+ <script type="module" src="../js/slick.js"></script>
   <script type="module" src="./js/index.js"></script>
 </html>

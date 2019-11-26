@@ -2,49 +2,39 @@ body {
   background: #444444;
   overflow-y: none;
 }
- //HEADER WITH THE CHAROUSEL WHEEL
- header {
+ //HEADER AND CHAROUSEL WHEEL 
+header{
+  justify-content: space-around;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 350px;
-  width: 100%;
-  border: 1px solid rosybrown;
-  background: #111111;
-  .header-arrow {
-    align-self: flex-end;
-    flex-basis: 10%;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 900;
-  }
-  .header-main {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .image-container {
-      margin: 1em 0em;
-      width: 200px;
-      height: 200px;
-      transition: 1000ms;
-      #image-placeholder {
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-    }
-    .header-more-info {
-      margin: 1em 0em;
-      * {
+  .slide-header{
+    margin: 1em auto;
+    width: 80%;
+    .single-slider{
+      text-align: center;
+      cursor: pointer;
+      padding:  auto;
+      .slider-image-container{
         display: block;
-        text-align: center;
-        margin: 0.2em;
+        margin: 1em auto;
+        width: 200px;
+        height: 200px;
+        img{
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
+  }
+  .header-prev,.header-next{
+    width: 10%;
+    background: transparent;
+    border: none;
+    font-size: 4rem;
   }
 }
+
 //BODY
 .head-name {
   font-size: 1.5rem;
@@ -75,6 +65,37 @@ body {
     margin: 0.2em 1em;
   }
 }
+.reviews {
+  margin: 1em 0.5em;
+.slide {
+  background: rosybrown;
+  padding: 0.5em;
+ 
+  *{
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  .slide-name{
+    text-align: right;
+  }
+}
+.reviews-btns {
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  button {
+    flex-basis: 30%;
+    padding: 0.1em;
+    font-size: 1.2rem;
+    background: transparent;
+    border: 2px solid rosybrown;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+}
+}
+
 // FOOTER
 footer {
   margin-top: 2em;
