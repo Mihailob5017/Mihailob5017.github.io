@@ -972,14 +972,6 @@ body {
     border: none;
     font-size: 4rem;
   }
-  header .header-prev:active, header .header-next:active {
-    outline: none;
-    background: white;
-    border: 2px solid rosybrown;
-  }
-  header .header-prev:active i, header .header-next:active i {
-    color: rosybrown;
-  }
   .head-name {
     font-size: 1.5rem;
     padding: 0.2em 0;
