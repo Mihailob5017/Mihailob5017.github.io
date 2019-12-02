@@ -29,12 +29,11 @@ body {
   grid-template: repeat(7,1fr);
   grid-auto-flow: dense;
   background-color: rosybrown;
-  *{
-    margin: 0.1em;
-  }
   .grid-image {
    
     img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
     
@@ -43,7 +42,8 @@ body {
    
     grid-column: span 2;
     img {
-    height: 100%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }
@@ -51,7 +51,8 @@ body {
     
     grid-row: span 2;
     img {
-    height: 100%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }

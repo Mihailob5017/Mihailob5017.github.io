@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../sass/style.css" />
     <title>Beauty Center By M</title>
   </head>
@@ -55,7 +56,7 @@
   <!-- PRICING MENU -->
     <div class="pricing-menu">
       <!-- Single PRICE -->
-      <div class="price-single">
+      <div  data-aos="zoom-out"  class="price-single">
         <div class="overlay">
               <h2 class="overlay-header">Sminka</h2>
               <ul class="overlay-prices">
@@ -73,7 +74,7 @@
         <img src="../images/image12.jpg" alt="price-image-background">
       </div>
         <!-- Single PRICE -->
-        <div class="price-single">
+        <div  data-aos="zoom-out" class="price-single">
             <div class="overlay">
                   <h2 class="overlay-header">Manikir</h2>
                   <ul class="overlay-prices">
@@ -89,7 +90,7 @@
             <img src="../images/image4.jpg" alt="price-image-background">
           </div>
         <!-- Single PRICE -->
-          <div class="price-single">
+          <div  data-aos="zoom-out" class="price-single">
               <div class="overlay">
                     <h2 class="overlay-header">Frizer</h2>
                     <ul class="overlay-prices">
@@ -114,6 +115,10 @@
       Beauty Palace By M Copyright&#9400 2019
     </footer>
     <script  type="module" src="../js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
     
   </body>
 </html>

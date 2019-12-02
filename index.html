@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./sass/slick-theme.css"/>
     <link rel="stylesheet" href="./sass/slick.css"/>
     <link rel="stylesheet" href="./sass/style.css" />
@@ -84,18 +85,18 @@
     </header>
     <!--LOGO,ABOUT,OTHER-->
     <div class="container">
-      <article class="head-name">Beauty Palace By M</article>
-      <article class="head-quote">Beauty begins the moment u decide to be yourself
+      <article  class="head-name">Beauty Palace By M</article>
+      <article  class="head-quote">Beauty begins the moment u decide to be yourself
         <span>-Adolf Hilter</span>
       </article>
-      <article class="head-body">
+      <article data-aos="fade-left" class="head-body">
         <div class="article-image-container">
           <img src="./images/image11.jpg" alt="image-naem">
           
         </div>
         <div class="head-body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio voluptatem sint odio, aspernatur aut repellendus consequatur temporibus quia eligendi incidunt expedita, nisi dolor facere iure dignissimos delectus maiores perspiciatis!</div>
       </article>
-      <div class="reviews">
+      <div data-aos="fade-up" class="reviews">
           <div class="reviews-slider">
             <!-- SLide 1 -->
               <div class="slide">
@@ -139,4 +140,8 @@
    <!-- VANILLA -->
  <script type="module" src="../js/slick.js"></script>
   <script type="module" src="./js/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 </html>

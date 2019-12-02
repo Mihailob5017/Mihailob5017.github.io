@@ -584,10 +584,8 @@ body {
     grid-auto-flow: dense;
     background-color: rosybrown;
   }
-  .gallery-section * {
-    margin: 0.1em;
-  }
   .gallery-section .grid-image img {
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -596,6 +594,7 @@ body {
     grid-column: span 2;
   }
   .gallery-section .grid-image-wide img {
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -604,6 +603,7 @@ body {
     grid-row: span 2;
   }
   .gallery-section .grid-image-tall img {
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1097,10 +1097,9 @@ body {
     grid-auto-flow: dense;
     background-color: rosybrown;
   }
-  .gallery-section * {
-    margin: 0.1em;
-  }
   .gallery-section .grid-image img {
+    width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1108,6 +1107,7 @@ body {
     grid-column: span 2;
   }
   .gallery-section .grid-image-wide img {
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1116,6 +1116,7 @@ body {
     grid-row: span 2;
   }
   .gallery-section .grid-image-tall img {
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1148,7 +1149,6 @@ body {
     transition: 500ms;
     height: 15em;
     margin: 2em 1em;
-    border-radius: 1em;
   }
   .location .gdesmo .adresa-txt {
     background: rosybrown;
@@ -1547,10 +1547,8 @@ body {
     grid-auto-flow: dense;
     background-color: rosybrown;
   }
-  .gallery-section * {
-    margin: 0.1em;
-  }
   .gallery-section .grid-image img {
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1559,6 +1557,7 @@ body {
     grid-column: span 2;
   }
   .gallery-section .grid-image-wide img {
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1567,6 +1566,7 @@ body {
     grid-row: span 2;
   }
   .gallery-section .grid-image-tall img {
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;

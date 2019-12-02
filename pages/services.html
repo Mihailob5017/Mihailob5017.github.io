@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../sass/style.css" />
     <title>Beauty Center By M</title>
   </head>
@@ -54,7 +55,7 @@
 
     <!-- SERVICES SECTION -->
     <div class="services-container">
-      <div class="service-single" id="service1">
+      <div data-aos="zoom-out-up" class="service-single" id="service1">
         <div class="service-header">
           <div class="service-single-image">
             <img src="../images/image15.jpg" alt="service-image" />
@@ -67,7 +68,7 @@
         </div>
       </div>
       <!-- BUTTON 2 -->
-      <div class="service-single"  id="service2">
+      <div data-aos="zoom-out-up" class="service-single"  id="service2">
           <div class="service-header">
             <div class="service-single-image">
               <img src="../images/image12.jpg" alt="service-image" />
@@ -75,12 +76,12 @@
             <h1 class="service-header-name">Sminkanje</h1>
             <button class="service-header-btn">Dodatne Informacije</button>
           </div>
-          <div class="service-body">
+          <div  class="service-body">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore error obcaecati in accusantium tempora mollitia, earum itaque cupiditate hic assumenda! Quia numquam non corrupti perspiciatis natus aspernatur cumque recusandae distinctio?</p>
           </div>
         </div>
          <!-- BUTTON 3 -->
-      <div class="service-single"  id="service3">
+      <div data-aos="zoom-out-up" class="service-single"  id="service3">
           <div class="service-header">
             <div class="service-single-image">
               <img src="../images/image11.jpg" alt="service-image" />
@@ -98,5 +99,10 @@
       Beauty Palace By M Copyright&#9400 2019
     </footer>
     <script type="module" src="../js/index.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>

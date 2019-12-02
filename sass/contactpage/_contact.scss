@@ -14,7 +14,6 @@ body {
       transition: 500ms;
       height: 15em;
       margin:2em 1em;
-      border-radius: 1em;
     }
     .adresa-txt {
       background:rosybrown;
@@ -47,7 +46,7 @@ body {
   margin: 1em 0.2em;
   display: flex;
   flex-direction: column;
-  h3 {
+  h3 {  
     margin-top: 0.51em;
     margin-bottom: 1em;
     padding: 1em 0;

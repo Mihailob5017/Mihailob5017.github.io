@@ -1,3 +1,4 @@
+
 //HIDES THE NAVBAR
 const scrollup = e => {
   if (
